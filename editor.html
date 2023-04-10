@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content type="width=device-width, initial-scale=1.0">
+		<title>egypt riches</title>
+
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/editor.css">
+		<!-- box icons -->
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<a href="index.html" class="logo"><span>egypt </span>riches</a>
+				<nav>
+					<a href="index.html">الصفحة الئيسية</a>
+					<a href="posts.HTML">المقالات</a>
+					<div class="join-us">
+						<a href="#" class="button">انضم إلينا</a>
+					</div>
+				</nav>
+				<button class="hamburger">
+					<div class="bar"></div>
+				</button>
+		
+			</div>
+		</header>
+		<nav class="mobile-nav">
+			<a href="index.html">الصفحة الئيسية</a>
+			<a href="posts.HTML">المقالات</a>
+			<a href="#">انضم إلينا</a>
+		</nav>
+
+		<main>
+            <section class="post-header">
+                <div class="header-content post-container">
+                    <a href="index.html" class="button">Back To Home</a>
+                </div>
+            </section>
+			<section class="post-content post-container" id="blogs">
+                <div class="header-img">
+                    <input type="file" accept="image/*" id="img-upload" hidden>
+                    <label for="img-upload" class="img-upload"><img class="header-img" src="media/upload.png" alt="upload banner"></label>
+                </div>
+                <!-- <h1 class="header-title">test</h1> -->
+                <div class="blog">
+                    <textarea type="text" class="title" placeholder="عنوان النقاله..." aria-controls=""></textarea>
+                    <textarea type="text" class="article" placeholder="النقاله..."></textarea>
+                </div>
+                <div class="blog-options">
+                    <button class="btn publish-ptn button">publish now</button>
+                    <input type="file" accept="image/*" id="img-upload" hidden>
+                    <label for="img-upload" class="btn dark upload-btn button">upload image</label>
+                </div>
+			</section>
+		</main>
+
+		<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
+		<script src="js/editor.js"></script>
+	</body>
+</html>
+
