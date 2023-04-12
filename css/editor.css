@@ -1,13 +1,3 @@
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-  scroll-padding: 10rem;
-  direction: rtl;
-}
-
 :root {
   --first-color: #00070D;
   --second-color: #3A5936;
@@ -18,36 +8,57 @@
   --grey: #ffffffa8;
 }
 
-main {
+main .post-header {
   width: 100%;
-  background: var(--white);
-  color: var(--first-color);
+  background-color: var(--first-color);
 }
-main .post-content .header-content {
+main .post-header .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem !important;
+}
+main .post-header .header-content .button {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+main .posts-content-1 .article-img {
   width: 100%;
   height: 400px;
   position: relative;
-  background: var(--white);
-  background-size: cover;
-  background-position: center;
 }
-main .post-content .blog {
+main .posts-content-1 .article-img .upload-img {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+main .posts-content-1 .article-img .upload-img img {
+  width: 40px;
+}
+main .posts-content-1 .blog {
   width: 100%;
   min-width: 400px;
-  max-width: 800px;
-  height: 6rem;
+  max-width: 1200px;
   display: block;
   margin: auto;
-  padding: 15px;
+  padding: 10px;
 }
-main .post-content .blog textarea::-webkit-scrollbar {
+main .posts-content-1 .blog textarea::-webkit-scrollbar {
   width: 10px;
 }
-main .post-content .blog textarea::-webkit-scrollbar-thumb {
+main .posts-content-1 .blog textarea::-webkit-scrollbar-thumb {
   background: var(--first-color);
   border-radius: 10px;
 }
-main .post-content .blog .title {
+main .posts-content-1 .blog .title {
   width: 100%;
   min-height: 100px;
   height: auto;
@@ -59,15 +70,15 @@ main .post-content .blog .title {
   padding: 10px;
   border-radius: 10px;
 }
-main .post-content .blog .title::-moz-placeholder {
+main .posts-content-1 .blog .title::-moz-placeholder {
   color: var(--first-color);
 }
-main .post-content .blog .title::placeholder {
+main .posts-content-1 .blog .title::placeholder {
   color: var(--first-color);
 }
-main .post-content .blog .article {
+main .posts-content-1 .blog .article {
   width: 100%;
-  min-height: 400px;
+  min-height: 800px;
   height: auto;
   font-size: 20px;
   font-weight: 500;
@@ -81,13 +92,13 @@ main .post-content .blog .article {
   margin-bottom: 90px;
   white-space: pre-wrap;
 }
-main .post-content .blog .article::-moz-placeholder {
+main .posts-content-1 .blog .article::-moz-placeholder {
   color: var(--first-color);
 }
-main .post-content .blog .article::placeholder {
+main .posts-content-1 .blog .article::placeholder {
   color: var(--first-color);
 }
-main .post-content .blog-options {
+main .posts-content-1 .blog-options {
   display: flex;
   position: fixed;
   bottom: 1rem;
@@ -99,16 +110,16 @@ main .post-content .blog-options {
   justify-content: center;
   align-items: center;
 }
-main .post-content .blog-options .btn {
+main .posts-content-1 .blog-options .btn {
   border: none;
   outline: none;
   cursor: pointer;
 }
-main .post-content .blog-options .dark {
+main .posts-content-1 .blog-options .dark {
   background: var(--first-color);
   color: var(--white);
 }
-main .post-content .blog-options .dark:hover {
+main .posts-content-1 .blog-options .dark:hover {
   background: var(--white);
   color: var(--first-color);
 }/*# sourceMappingURL=editor.css.map */

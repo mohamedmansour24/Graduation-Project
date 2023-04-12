@@ -596,13 +596,6 @@ main .posts .posts .post .content {
   transition: 0.3s;
   max-width: 100%;
 }
-main .posts .posts .post .content .category {
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 8px;
-  text-transform: uppercase;
-  color: var(--first-color);
-}
 main .posts .posts .post .content h3 {
   font-size: 1.8rem;
   margin-bottom: 16px;
@@ -691,46 +684,6 @@ main .contact .container form .form-grid .form-element::placeholder {
 }
 main .contact .container form .center-align {
   text-align: center;
-}
-main .post-header {
-  width: 100%;
-  background-color: var(--first-color);
-}
-main .post-header .header-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 4rem !important;
-}
-main .post-header .header-content .button {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
-}
-main .post-header .header-content .header-title {
-  width: 90%;
-  font-size: 2.6rem;
-  color: var(--white);
-  text-align: center;
-  margin-bottom: 1rem;
-}
-main .post-header .header-content .header-img {
-  width: 100%;
-  height: 480px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-main .post-content {
-  margin-top: 10rem !important;
-  text-align: right;
-}
-main .post-content .sub-heading {
-  font-size: 1.2rem;
-}
-main .post-content p {
-  font-size: 0.8rem;
-  margin-top: 1rem;
 }
 
 @media (max-width: 767px) {
