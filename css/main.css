@@ -24,7 +24,7 @@
   --forth-color: #1B4001;
   --fifth-color: #688C1B;
   --white: #fff;
-  --grey: #ffffffa8;
+  --grey: #ffffff1f;
 }
 
 a {
@@ -239,7 +239,7 @@ header.is-scrolling {
 }
 
 main section.mission {
-  padding: 6rem 12rem;
+  padding: 3rem 4rem;
   color: var(--white);
   position: relative;
   min-height: 75vh;
@@ -260,30 +260,40 @@ main section.mission:before {
   bottom: 0;
   z-index: 0;
   background-color: var(--first-color);
-  opacity: 0.2;
+  opacity: 0.9;
 }
 main section.mission .container {
   z-index: 1;
+  margin: 2rem 0;
 }
 main section.mission .container h1 {
-  font-size: 72px;
-  margin-bottom: 32px;
+  font-size: 56px;
 }
 main section.mission .container h1 span {
   color: var(--fifth-color);
 }
 @media (max-width: 767px) {
   main section.mission .container h1 {
-    font-size: 46px;
+    font-size: 42px;
   }
 }
 main section.mission .container h3 {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 400;
-  margin-bottom: 32px;
+  margin-bottom: 1rem;
 }
 @media (max-width: 767px) {
   main section.mission .container h3 {
+    font-size: 28px;
+  }
+}
+main section.mission .container p {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  main section.mission .container p {
     font-size: 28px;
   }
 }
@@ -305,6 +315,7 @@ main section.mission .social-media-icons a {
   color: var(--fifth-color);
   font-size: 2rem;
   transition: 0.3s ease;
+  margin-top: 2rem;
 }
 main section.mission .social-media-icons a:not(:last-child) {
   margin-bottom: 1.2rem;
@@ -320,7 +331,7 @@ main section.mission .social-media-icons a:hover {
     font-size: 1.5rem;
   }
 }
-main section.mission img {
+main section.mission .img-slide {
   position: absolute;
   top: 0;
   left: 0;
@@ -354,6 +365,7 @@ main section.mission .slider-container .bin {
   box-shadow: 0 0 2px var(--grey);
   transition: 0.3s ease;
   margin-right: 1.1rem;
+  margin-bottom: 3rem;
 }
 main section.mission .slider-container .bin.active {
   background: var(--fifth-color);
@@ -374,6 +386,64 @@ main section.mission .img-slide.active {
   transition-property: -webkit-clip-path;
   transition-property: clip-path;
   transition-property: clip-path, -webkit-clip-path;
+}
+main .main-articles {
+  width: 100%;
+  height: 500;
+  padding: 3rem 3vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+}
+main .main-articles .main-c {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 0 2px var(--forth-color);
+  transition: 0.3s ease;
+}
+main .main-articles .main-c:hover {
+  transform: scale(1.05);
+}
+main .main-articles .main-c .main-content .post-img {
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  transition: 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 0 10px var(--grey);
+}
+main .main-articles .main-c .main-content .post-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 10px;
+  margin: 1.5rem 2rem !important;
+}
+main .main-articles .main-c .main-content .post-body {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0.4rem 2rem !important;
+}
+main .main-articles .main-c .main-content .post-date {
+  font-size: 14px;
+  color: #999;
+}
+main .main-articles .main-c .main-content .button {
+  margin: 1.5rem 2rem !important;
+}
+main .main-articles .first {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+main .main-articles .second {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+main .main-articles .third {
+  background-color: rgba(0, 0, 0, 0.01);
+}
+main .main-articles .fourth {
+  background-color: rgba(0, 0, 0, 0.01);
 }
 main .posts {
   padding: 1.5rem 1rem;
@@ -587,6 +657,7 @@ main .posts .posts .type-4 {
 main .posts .posts .post {
   border-radius: 1rem;
   background-size: 100%;
+  height: 250px;
 }
 main .posts .posts .post .content {
   opacity: 0;
@@ -630,6 +701,7 @@ main .posts .posts .post:hover .content {
   background-color: rgba(27, 64, 1, 0.6);
   opacity: 1;
   border-radius: 1rem;
+  height: 250px;
 }
 main .posts .center {
   text-align: center;

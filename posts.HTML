@@ -17,7 +17,7 @@
 				<a href="index.html" class="logo"><span>egypt </span>riches</a>
 				<nav>
 					<a href="index.html">الصفحة الئيسية</a>
-					<a href="posts.HTML">المقالات</a>
+					<a href="editor.html">محرر المقالات</a>
 					<div class="join-us">
 						<a href="#" class="button">انضم إلينا</a>
 					</div>
@@ -29,36 +29,361 @@
 			</div>
 		</header>
 		<nav class="mobile-nav">
-			<a href="index.html">الصفحة الئيسية</a>
-			<a href="posts.HTML">المقالات</a>
+			<a href="#">الصفحة الئيسية</a>
+			<a href="editor.html">محرر المقالات</a>
 			<a href="#">انضم إلينا</a>
 		</nav>
 
 		<main>
 			<section class="post-header">
-				<div class="header-content post-container">
-					<a href="index.html" class="button">Back To Home</a>
-					<img src="media/photo-1446071103084-c257b5f70672.webp" alt="" class="header-img">
+                <div class="header-content post-container">
+                    <a href="index.html" class="button">Back To Home</a>
+                </div>
+            </section>
+			<section class="posts" id="posts">
+				<div class="container">
+					<h2>المقالات</h2>
+					<form>
+						<div class="search">
+							<div class="bar">
+								<input type="text" name="location" id="location" placeholder="بحث..." class="bar" />
+								<button type="submit">Go</button>
+							</div>
+						</div>
+					</form>
+					<div class="filter">
+						<label>
+							<input type="radio" name="filter" value="all" checked>
+							الكل
+						</label>
+						<label>
+							<input type="radio" name="filter" value="development">
+							التنمية
+						</label>
+						<label>
+							<input type="radio" name="filter" value="investment">
+							الاستثمار
+						</label>
+						<label>
+							<input type="radio" name="filter" value="opportunities">
+							الفرص
+						</label>
+						<label>
+							<input type="radio" name="filter" value="type">
+							انواع المحاصيل
+						</label>
+					</div>
+					
+					<div class="posts">
+						<!-- development -->
+						<div class="post development-1" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D1.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-2" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D2.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-3" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D3.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-4" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D4.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-5" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D5.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-6" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D6.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-7" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D7.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-8" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D8.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-9" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D9.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post development-10" data-category="development">
+							<div class="content development">
+								<h3 class="post-title">first post </h3>
+								<p>This is the first post</p>
+								<a href="D10.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+
+						<!-- investment -->
+						<div class="post investment-1" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I1.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-2" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I2.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-3" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I3.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-4" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I4.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-5" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I5.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-6" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I6.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-7" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I7.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-8" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I8.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-8" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I8.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post investment-10" data-category="investment">
+							<div class="content investment">
+								<img src="" alt="" class="post-img">
+								<h3>second post </h3>
+								<p>This is the second post</p>
+								<a href="I10.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+
+						<!-- opportunities -->
+						<div class="post opportunities-1" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O1.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-2" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O2.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-3" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O3.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-4" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O4.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-5" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O5.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-6" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O6.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-7" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O7.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-8" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O8.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-9" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O9.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post opportunities-10" data-category="opportunities">
+							<div class="content opportunities">
+								<img src="" alt="" class="post-img">
+								<h3>third post </h3>
+								<p>This is the third post</p>
+								<a href="O10.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+
+						<!-- type -->
+						<div class="post type-1" data-category="type">
+							<div class="content type">
+								<img src="" alt="" class="post-img">
+								<h3>fifth post </h3>
+								<p>أفضل الفواكه المصرية في موسم الصيف</p>
+								<a href="T1.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post type-2" data-category="type">
+							<div class="content type">
+								<img src="" alt="" class="post-img">
+								<h3>fifth post </h3>
+								<p>أفضل الخضروات المصرية في موسم الصيف</p>
+								<a href="T2.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post type-3" data-category="type">
+							<div class="content type">
+								<img src="" alt="" class="post-img">
+								<h3>fifth post </h3>
+								<p>أفضل الفواكه المصرية في موسم الشتاء</p>
+								<a href="T3.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+						<div class="post type-4" data-category="type">
+							<div class="content type">
+								<img src="" alt="" class="post-img">
+								<h3>fifth post </h3>
+								<p>أفضل الخضروات المصرية في موسم الشتاء</p>
+								<a href="T4.HTML" class="button">اقرأ أكثر</a>
+								<span class="post-date">4 ابريل 2023</span>
+							</div>
+						</div>
+					</div>
+					
+					<div class="center">
+						<a href="posts.HTML" class="button">View more</a>
+					</div>
 				</div>
-				<h1 class="header-title">test</h1>
-			</section>
-			<section class="post-content post-container" id="blogs">
-				<h2 class="sub-heading">sub test</h2>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<br>
-				<h2 class="sub-heading">sub test</h2>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<br>
-				<h2 class="sub-heading">sub test</h2>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
-				<p class="post-text">post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test post text test </p>
 			</section>
 		</main>
 
